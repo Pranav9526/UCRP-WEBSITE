@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - San Andreas Multiplayer Server</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Include same styles as main page -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap');
+        
+        :root {
+            --primary-cyan: #00ffff;
+            --dark-cyan: #008b8b;
+            --light-cyan: #e0ffff;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0a192f;
+            color: white;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 139, 139, 0.5)), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d1d5f0bc-ea8e-4a81-a23f-de0f2c6f45d9.png') no-repeat center center;
+            background-size: cover;
+        }
+        
+        .btn-cyan {
+            background: var(--primary-cyan);
+            color: #0a192f;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-cyan:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 255, 255, 0.3);
+        }
+        
+        .animate-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(0, 255, 255, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(0, 255, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 255, 255, 0); }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero-section min-h-screen flex items-center justify-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-cyan-300">
+                Thank You!
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
+                Your feedback has been received. We appreciate you helping improve our server.
+            </p>
+            <a href="https://ucrp-kerala.netlify.app/" class="btn-cyan px-8 py-3 rounded-md text-lg font-medium animate-pulse">
+                Return to Home Page
+            </a>
+        </div>
+    </section>
+</body>
+</html>
