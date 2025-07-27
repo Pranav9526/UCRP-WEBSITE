@@ -29,12 +29,13 @@
         .hero-section {
             background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 139, 139, 0.5)), url('assets/gallery28.jpg') no-repeat center center;
             background-size: cover;
+            background-attachment: fixed;
         }
         /* Improve image appearance on small screens */
         @media (max-width: 768px) {
             .hero-section {
-                background-size: contain;
-                background-position: top;
+                background-position: center top;
+                background-size: contain; /* makes the full image fit in view */
                 background-repeat: no-repeat;
             }
         }
@@ -161,8 +162,8 @@
     </nav>
 
     <!-- Hero Section -->
-    <!--<section id="home" class="hero-section min-h-screen flex items-center justify-center pt-16">-->
-    <section id="home" class="hero-section min-h-screen flex items-center justify-center pt-16 bg-cover bg-center sm:bg-fixed sm:bg-cover sm:bg-center bg-[url('assets/gallery28.jpg')]">
+    <section id="home" class="hero-section min-h-screen flex items-center justify-center pt-16">
+    <!--<section id="home" class="hero-section min-h-screen flex items-center justify-center pt-16 bg-cover bg-center sm:bg-fixed sm:bg-cover sm:bg-center bg-[url('assets/gallery28.jpg')]"> -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 text-cyan-300 slide-in-left">
